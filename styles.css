@@ -39,7 +39,7 @@ ul, ol, li {
   width: 92px;
   text-align: center;
 }
-.nav__pages-link, .nav__sections-link {
+.nav__pages-link, .nav__sections-link, .nav__sections-link--highlight {
   text-decoration: none;
   color: #000000;
   display: flex;
