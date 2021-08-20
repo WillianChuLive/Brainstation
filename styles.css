@@ -66,7 +66,7 @@ ul, ol, li {
 }
 .header__container {
   padding: 0 5%;
-  width: 90%;
+  width: 150%;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -91,10 +91,10 @@ ul, ol, li {
   font-family: "Overpass", Arial, Helvetica, sans-serif;
   font-size: 26px;
 }
-.header__copy--bold, .header__tagline--bold {
+.header__copy--bold, .header__tagline--bold, .header__copy--shout {
   font-weight: bold;
 }
-.header__copy--uppercase, .header__tagline--uppercase {
+.header__copy--uppercase, .header__tagline--uppercase, .header__copy--shout {
   text-transform: uppercase;
 }
 .header__copy {
