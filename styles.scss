@@ -1,0 +1,275 @@
+// colors ====
+$blue: #E2F6F5;
+$light-gold: #F4EEE5;
+$gold: #E2D6C3;
+$white: #FFFFFF;
+$black: #000000;
+$gray: #E7E6E5;
+$padding: 15px;
+$margin: 15px;
+
+
+//fonts ======
+@mixin chivo {
+    font-family: 'Chivo', Arial, Helvetica, sans-serif;
+    @content;
+}
+
+@mixin overpass {
+    font-family: 'Overpass', Arial, Helvetica, sans-serif;
+    @content;
+}
+
+@mixin reset-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+@mixin reset-link($color: $black) {
+    text-decoration: none;
+    color: $color;
+
+    &:active, &:hover, &:focus {
+        text-decoration: none;
+        color: $color;
+    }
+}
+
+@mixin container {
+    padding: 0 5%;
+}
+
+html, body {
+    @include overpass;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    @include overpass {
+        font-size: 26px;
+    }
+}
+
+ul, ol, li {
+    @include overpass {
+        font-size: 19px;
+    }
+}
+
+.nav a, .nav-footer a, .nav p, .nav-footer p {
+    font-size: 12px;
+}
+
+.nav {
+    @include chivo {
+        font-size: 12px;
+        font-weight: normal;
+    }
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;    
+    height: 100%;
+    border-bottom: 2px solid black;
+
+    &__pages, &__sections  {
+    
+        &-list {
+            @include reset-list;
+            display: flex;
+        }
+
+        &-list-item {
+            width: 92px;
+            text-align: center;
+        }
+
+        &-link {
+            @include reset-link();
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            &--active, &--highlight, &:hover {
+                background: black;
+                color: white;
+            }
+        }
+    }
+
+    &__logo {
+    
+        &-img {
+            padding: $padding;
+        }
+    }
+}
+
+ 
+.header {
+    @include container;
+    background: url('../watch-front.png') 0% 50%/cover no-repeat;
+    height: calc(100vh - 80px);
+
+    &__container {
+        @include container;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+
+    &__title {
+        @include chivo {
+            font-size: 36px;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+        margin: 0;
+
+    }
+    &__subtitle {
+        @include chivo {
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        margin: 0 0 $margin*6;
+    }
+    &__copy, &__tagline {
+        width: 27%;
+        @include overpass {
+            font-size: 26px;
+        }
+    
+        &--bold {
+            font-weight: bold;
+        }
+        &--uppercase {
+            text-transform: uppercase;
+        }
+    }
+
+    &__copy {
+        margin: 0 0 $margin*6;
+    }
+    
+    &__tagline {
+        margin: 0;
+    }
+}
+
+.features {
+    @include container;
+    background: $light-gold;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    &__container {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        background: white;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title {
+        @include chivo {
+            font-size: 32px;
+        }
+        margin: 0;
+    }
+    &__list {
+    
+    }
+    &__list-item {
+        @include overpass {
+            font-size: 26px;
+        }
+    }
+}
+
+.pricing {
+    @include container;
+    background: $gray;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    &__container {
+        @include container;
+    }
+
+    &__title {
+        @include chivo {
+            font-size: 32px;
+        }
+        margin: 0 0 30px;
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__card {
+        background: $white;
+        padding: $padding*2;
+        width: 25%;
+    
+        &-top {
+        }
+        &-title {
+            margin: 0;
+            @include overpass {
+                font-weight: normal;
+                font-size: 19px;
+            }
+        }
+        &-price {
+            @include chivo {
+                font-size: 62px;
+            }
+            margin: 0;
+        }
+        &-bottom {
+            font-size: 19px;
+
+            p, ol, ul li {
+                font-size: 19px;
+            }
+        }
+    }
+}
+.nav-footer {
+    @include container;
+    @include chivo;
+    background: $blue;
+
+    &__list {
+        @include reset-list;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;    
+        height: 100%;
+    }
+    &__list-item {
+        align-self: center;
+    }
+    &__link {
+        @include reset-link();
+    }
+    &__logo {
+        padding: $padding;
+    }
+}
+
+
+
+
