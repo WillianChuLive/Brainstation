@@ -13,6 +13,42 @@
 
     <style>
         /* add your styles below: */
+        .extra {
+            background: #F4EEE5;
+            }
+        .extra__container {
+            padding-top: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+            background: white;
+        }
+        .extra__title {
+            font-family: "Overpass", Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            margin:0
+        }
+        .extra__item {
+            font-family: "Overpass", Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin:0
+        }       
+
+        /* # Added in style sheet css among other common classes properties;
+            .nav__sections-link--highlight {
+                text-decoration: none;
+                color: #000000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            } 
+
+            # splited in two common classes;
+            .header__copy--shout {
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        */  
 
 
     </style>
@@ -46,7 +82,11 @@
             <h1 class="header__title">Form Over Function?</h1>
             <h2 class="header__subtitle">Why Choose?</h2>
             <p class="header__copy">
-                At <span class="header__copy--bold">F+F</span> we believe that you shouldn’t have to pick between a stunning product and one that works.  <span class="header__copy--bold">No compromises.</span> Just an outstanding wrist watch, built to last. Minimal, yet <span class="header__copy--shout">sharp</span>. Modern, yet <span class="header__copy--shout">timeless</span>.</p>
+                At <span class="header__copy--bold">F+F</span> we believe that you shouldn’t have to pick between a stunning product and one that works.  <span class="header__copy--bold">No compromises.</span> Just an outstanding wrist watch, built to last.
+            <br><br>
+            Minimal, yet <span class="header__copy--shout">sharp</span>.<br>
+            Modern, yet <span class="header__copy--shout">timeless</span>.
+            </p>
         </div>
     </header>
     
@@ -81,6 +121,41 @@
                 </div>
             </div>
         </div>
+        <div id="extra" class="extra">
+            <div class="extra__container">
+                <div><h3 class="extra__title">A Massive 1.5 Inch Touch Screen</h3>
+
+                    <p class="extra__item">Size is what matters when it comes to a smart watch screen. Read all your notifications with plenty of space.</p><br><br>
+                
+                </div>
+                <div><h3 class="extra__title">Mix and Match Designs</h3>
+                    
+                   <p class="extra__item">Personalize your watch face to match your own unique style with many combinations of background images, clock styles and colors.</p><br><br>
+                
+                </div>
+                <div><h3 class="extra__title">Water Resistant up to 7 Feet</h3>
+                    
+                    <p class="extra__item">IP68 Weatherproof rating. Fit to withstand dust, dirt and sand and resistant to submersion up to a maximum depth of 7 feet underwater for up to 30 minutes.</p><br><br>
+                
+                </div>
+                <div><h3 class="extra__title">Tracking your Steps, Heart Rate & Sleep.</h3>    
+                    
+                    <p class="extra__item">Check out your step progress during the day with the in app-tracker. Keep an eye on your heart rate easily and conveniently. And when you’re ready for your head to hit the pillow, track that too. </p><br><br>
+                    
+                </div>
+                <div><h3 class="extra__title">Notifications from Popular Apps</h3>    
+                    
+                    <p class="extra__item">Get all your notifications from all your accounts conveniently on your wrist</p><br><br>
+
+                </div>
+                <div><h3 class="extra__title">Up to 10 Days of Battery Life</h3>    
+                    
+                    <p class="extra__item">With a battery capacity up to 300mAh, you’ll have no problem getting through the week with plenty of charge to spare.</p><br><br>
+                </div>
+                    <!-- Furthermore, you may go beyond the basic requirements above to showcase your current HTML and CSS skills, including any skills not covered in the Admissions Challenge such as Flexbox or CSS animations.how</p> -->
+                </div>
+            </div>
+            
         <div id="pricing" class="pricing">
             <div class="pricing__container">
                 <h3 class="pricing__title">Pricing:</h3>
@@ -92,7 +167,11 @@
                         </div>
                         <hr size="2" width="100%" color="black">
                         <div class="pricing__card-bottom">
-                            includes: Watch face, Interchangeable band (white), Charging cable
+                            included in package: <ol>
+                                <li>Watch face</li>
+                                <li>Interchangeable band (white)</li>
+                                <li>Charging cable</li>
+                            </ol>
                         </div>
                     </div>
                     <div class="pricing__card">
@@ -102,7 +181,10 @@
                         </div>
                         <hr size="2" width="100%" color="black">
                         <div class="pricing__card-bottom">
-                            includes: Everything in Package 1, Interchangeable band (black)
+                            included in package: <ol>
+                                <li>Everything in Package 1</li>
+                                <li>Interchangeable band (black)</li>
+                            </ol>
                         </div>
                     </div>
                     <div class="pricing__card">
@@ -112,7 +194,11 @@
                         </div>
                         <hr size="2" width="100%" color="black">
                         <div class="pricing__card-bottom">
-                            includes: Everything in Package 2, Extra charging cable, Warranty for 5 years
+                            included in package: <ol>
+                                <li>Everything in Package 2</li>
+                                <li>Extra charging cable</li>
+                                <li>Warranty for 5 years</li>
+                            </ol>
                         </div>
                     </div>
                 </div>
